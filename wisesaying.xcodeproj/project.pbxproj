@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5438B7F28190585001AEFBD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A5438B7E28190585001AEFBD /* Kingfisher */; };
 		A55D14DD2818E0E000164A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D14DC2818E0E000164A92 /* AppDelegate.swift */; };
 		A55D14DF2818E0E000164A92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D14DE2818E0E000164A92 /* SceneDelegate.swift */; };
-		A55D14E12818E0E000164A92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D14E02818E0E000164A92 /* ViewController.swift */; };
 		A55D14E42818E0E000164A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55D14E22818E0E000164A92 /* Main.storyboard */; };
 		A55D14E62818E0E400164A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55D14E52818E0E400164A92 /* Assets.xcassets */; };
 		A55D14E92818E0E400164A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55D14E72818E0E400164A92 /* LaunchScreen.storyboard */; };
+		A55D14F22818F16600164A92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D14E02818E0E000164A92 /* ViewController.swift */; };
+		A55D14F42818F20A00164A92 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D14F32818F20A00164A92 /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		A55D14E52818E0E400164A92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55D14E82818E0E400164A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A55D14EA2818E0E400164A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55D14F32818F20A00164A92 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5438B7F28190585001AEFBD /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +44,7 @@
 		A55D14D02818E0E000164A92 = {
 			isa = PBXGroup;
 			children = (
-				A55D14DB2818E0E000164A92 /* wisesaying */,
+				A55D14DB2818E0E000164A92 /* WiseSaying */,
 				A55D14DA2818E0E000164A92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +57,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A55D14DB2818E0E000164A92 /* wisesaying */ = {
+		A55D14DB2818E0E000164A92 /* WiseSaying */ = {
 			isa = PBXGroup;
 			children = (
 				A55D14DC2818E0E000164A92 /* AppDelegate.swift */,
+				A55D14E52818E0E400164A92 /* Assets.xcassets */,
+				A55D14EA2818E0E400164A92 /* Info.plist */,
+				A55D14E72818E0E400164A92 /* LaunchScreen.storyboard */,
+				A55D14E22818E0E000164A92 /* Main.storyboard */,
 				A55D14DE2818E0E000164A92 /* SceneDelegate.swift */,
 				A55D14E02818E0E000164A92 /* ViewController.swift */,
-				A55D14E22818E0E000164A92 /* Main.storyboard */,
-				A55D14E52818E0E400164A92 /* Assets.xcassets */,
-				A55D14E72818E0E400164A92 /* LaunchScreen.storyboard */,
-				A55D14EA2818E0E400164A92 /* Info.plist */,
+				A55D14F32818F20A00164A92 /* Quote.swift */,
 			);
-			path = wisesaying;
+			path = WiseSaying;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = wisesaying;
+			packageProductDependencies = (
+				A5438B7E28190585001AEFBD /* Kingfisher */,
+			);
 			productName = wisesaying;
 			productReference = A55D14D92818E0E000164A92 /* wisesaying.app */;
 			productType = "com.apple.product-type.application";
@@ -102,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A55D14D42818E0E000164A92 /* Build configuration list for PBXProject "wisesaying" */;
+			buildConfigurationList = A55D14D42818E0E000164A92 /* Build configuration list for PBXProject "WiseSaying" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = A55D14D02818E0E000164A92;
+			packageReferences = (
+				A5438B7D28190585001AEFBD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A55D14DA2818E0E000164A92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A55D14E12818E0E000164A92 /* ViewController.swift in Sources */,
+				A55D14F42818F20A00164A92 /* Quote.swift in Sources */,
+				A55D14F22818F16600164A92 /* ViewController.swift in Sources */,
 				A55D14DD2818E0E000164A92 /* AppDelegate.swift in Sources */,
 				A55D14DF2818E0E000164A92 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,6 +304,7 @@
 				DEVELOPMENT_TEAM = 6SMT2N2495;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wisesaying/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WiseSaying;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ronichoi.wisesaying;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronichoi.WiseSaying;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,6 +333,7 @@
 				DEVELOPMENT_TEAM = 6SMT2N2495;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wisesaying/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WiseSaying;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ronichoi.wisesaying;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronichoi.WiseSaying;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,7 +355,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A55D14D42818E0E000164A92 /* Build configuration list for PBXProject "wisesaying" */ = {
+		A55D14D42818E0E000164A92 /* Build configuration list for PBXProject "WiseSaying" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A55D14EB2818E0E400164A92 /* Debug */,
@@ -360,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5438B7D28190585001AEFBD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5438B7E28190585001AEFBD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5438B7D28190585001AEFBD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A55D14D12818E0E000164A92 /* Project object */;
 }
